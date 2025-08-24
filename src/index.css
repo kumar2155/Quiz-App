@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blink {
+  animation: glow-blink 1s infinite;
+}
+
+@keyframes glow-blink {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px red);
+  }
+  50% {
+    filter: drop-shadow(0 0 0px red);
+  }
+}
+
